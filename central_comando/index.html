@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Central de Comando</title>
+
+    <!-- Ligação com o CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main class="central">
+
+        <header class="cabecalho">
+
+            <div class="logo">🚀</div>
+
+            <div class="titulo">
+                <h1>Central de Comando</h1>
+                <p>Sistema de controle da nave</p>
+            </div>
+
+            <div class="online">
+                🟢 ONLINE
+            </div>
+
+        </header>
+
+
+        <!-- IDENTIFICAÇÃO -->
+
+        <section class="caixa">
+
+            <h2>👤 Identificação do Comandante</h2>
+
+            <input
+                type="text"
+                id="nome"
+                placeholder="Digite seu nome..."
+            >
+
+            <div id="saudacao" class="mensagem">
+                ⚠ Aguardando identificação...
+            </div>
+
+        </section>
+
+
+        <!-- SISTEMAS -->
+
+        <section class="caixa">
+
+            <h2>⚙ Sistemas da Nave</h2>
+
+            <div class="sistemas">
+
+                <div class="sistema energia" id="energia">
+
+                    <div class="icone">🔋</div>
+
+                    <h3>ENERGIA</h3>
+
+                    <p>100% disponível</p>
+
+                    <small>
+                        Sistema responsável pelo fornecimento de energia.
+                    </small>
+
+                </div>
+
+
+                <div class="sistema luzes" id="luzes">
+
+                    <div class="icone">💡</div>
+
+                    <h3>LUZES</h3>
+
+                    <p id="status-luzes">
+                        DESLIGADAS
+                    </p>
+
+                </div>
+
+
+                <div class="sistema comunicacao" id="comunicacao">
+
+                    <div class="icone">📡</div>
+
+                    <h3>COMUNICAÇÃO</h3>
+
+                    <p id="status-comunicacao">
+                        OFFLINE
+                    </p>
+
+                </div>
+
+
+                <div class="sistema escudos" id="escudos">
+
+                    <div class="icone">🛡️</div>
+
+                    <h3>ESCUDOS</h3>
+
+                    <p id="status-escudos">
+                        DESATIVADOS
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ALERTA -->
+
+        <section class="caixa">
+
+            <h2>🚨 Nível de Alerta</h2>
+
+            <select id="nivel-alerta">
+
+                <option value="normal">Normal</option>
+
+                <option value="atencao">Atenção</option>
+
+                <option value="perigo">Perigo</option>
+
+                <option value="emergencia">Emergência</option>
+
+            </select>
+
+            <div id="mensagem-alerta" class="status-alerta">
+                🟢 Sistema Operacional
+            </div>
+
+        </section>
+
+
+        <!-- FORMULÁRIO -->
+
+        <section class="caixa">
+
+            <h2>📡 Comunicação com a Central</h2>
+
+            <form id="formulario">
+
+                <label for="mensagem">
+                    Mensagem
+                </label>
+
+                <textarea
+                    id="mensagem"
+                    placeholder="Digite sua mensagem..."
+                ></textarea>
+
+                <button type="submit">
+                    🚀 ENVIAR MENSAGEM
+                </button>
+
+            </form>
+
+            <p id="resultado-form"></p>
+
+        </section>
+
+
+        <!-- BOTÃO -->
+
+        <button
+            id="ativar"
+            class="botao-ativar"
+        >
+            🚀 ATIVAR SISTEMAS
+        </button>
+
+    </main>
+
+
+    
+    <script src="js/script.js"></script>
+
+</body>
+<link rel="stylesheet" href="/css/style.css">
+</html>

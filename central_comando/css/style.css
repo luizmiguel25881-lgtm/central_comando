@@ -1,0 +1,263 @@
+/* Configuração geral */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #17152b;
+    color: white;
+    padding: 15px;
+}
+
+/* Área principal */
+.central {
+    max-width: 450px;
+    margin: auto;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background-color: #29254a;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.logo {
+    font-size: 25px;
+}
+
+.titulo {
+    flex: 1;
+}
+
+.titulo h1 {
+    font-size: 18px;
+}
+
+.titulo p {
+    font-size: 10px;
+    color: #bbb;
+}
+
+.online {
+    font-size: 9px;
+}
+
+.online span {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background-color: #40d65b;
+    border-radius: 50%;
+}
+
+/* Caixas */
+.caixa {
+    background-color: #29254a;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.caixa h2 {
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+/* Campo de nome */
+input {
+    width: 100%;
+    padding: 9px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.mensagem {
+    background-color: #211d3c;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-size: 10px;
+}
+
+/* Cards dos sistemas */
+.sistemas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.sistema {
+    padding: 15px;
+    min-height: 100px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.sistema:hover {
+    transform: scale(1.02);
+}
+
+.icone {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.sistema h3 {
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+
+.sistema p {
+    font-size: 9px;
+}
+
+/* Cores dos cards */
+
+.energia {
+    background-color: #65a854;
+}
+
+.luzes {
+    background-color: #d99b16;
+}
+
+.comunicacao {
+    background-color: #7654d8;
+}
+
+.escudos {
+    background-color: #5275df;
+}
+
+/* Explicação da energia */
+
+.sistema small {
+    display: none;
+    font-size: 9px;
+    margin-top: 8px;
+}
+
+.energia.mostrando small {
+    display: block;
+}
+
+/* Sistema ativado */
+
+.sistema.ativo {
+    border: 3px solid white;
+    box-shadow: 0 0 10px white;
+}
+
+/* Select */
+
+select {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Mensagem do alerta */
+
+.status-alerta {
+    text-align: center;
+    background-color: #211d3c;
+    padding: 8px;
+    margin-top: 6px;
+    border-radius: 5px;
+    font-size: 10px;
+}
+
+/* Formulário */
+
+label {
+    display: block;
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+textarea {
+    width: 100%;
+    height: 70px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+
+/* Botões */
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 7px;
+    border: none;
+    border-radius: 5px;
+    background-color: #7354d8;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6043bd;
+}
+
+/* Mensagem do formulário */
+
+#resultado-form {
+    text-align: center;
+    font-size: 10px;
+    color: #52df68;
+    margin-top: 5px;
+}
+
+/* Botão principal */
+
+.botao-ativar {
+    background-color: #7354d8;
+}
+
+/* Tema Atenção */
+
+body.atencao {
+    background-color: #5a4815;
+}
+
+/* Tema Perigo */
+
+body.perigo {
+    background-color: #663516;
+}
+
+/* Tema Emergência */
+
+body.emergencia {
+    background-color: #641b28;
+}
+
+/* Celular pequeno */
+
+@media (max-width: 400px) {
+
+    body {
+        padding: 8px;
+    }
+
+    .titulo h1 {
+        font-size: 15px;
+    }
+
+    .sistema {
+        min-height: 90px;
+    }
+}
